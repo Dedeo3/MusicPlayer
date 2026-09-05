@@ -50,5 +50,7 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.koin.android)
     implementation(libs.glide)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.mockk)
 
 }
