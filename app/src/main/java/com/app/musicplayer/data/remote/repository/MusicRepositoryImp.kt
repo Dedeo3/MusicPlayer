@@ -11,7 +11,7 @@ class MusicRepositoryImp(val apiService: ApiService): IMusicRepository {
             Result.success(response.results.map{
                 it.toSong()
             })
-        }catch (e: Error){
+        }catch (e: Exception){
             Result.failure(e)
         }
     }
